@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Champions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="mainMenu">
+        <h1>FOOTBALL CHAMPIONS</h1>
+        <p>ULTIMATE FOOTBALL EXPERIENCE</p>
+
+        <button id="onlineBtn">🌐 ONLINE MATCH</button>
+        <button id="friendsBtn">👥 FRIENDS MATCH</button>
+        <button id="settingsBtn">⚙ SETTINGS</button>
+    </div>
+
+    <div id="friendsMenu" class="hidden">
+        <h2>FRIENDS MATCH</h2>
+
+        <button id="createRoomBtn">CREATE ROOM</button>
+
+        <input id="roomCode" placeholder="Enter Room Code">
+
+        <button id="joinRoomBtn">JOIN ROOM</button>
+
+        <p id="roomMessage"></p>
+        <button id="backBtn">BACK</button>
+    </div>
+
+    <div id="gameArea" class="hidden">
+        <div class="gameTop">
+            <h2>FOOTBALL CHAMPIONS</h2>
+            <div id="scoreboard">BLUE 0 - 0 RED</div>
+            <button id="exitBtn">EXIT MATCH</button>
+        </div>
+
+        <div id="gameContainer"></div>
+
+        <div id="controls">
+            WASD / ARROWS = MOVE |
+            SPACE = SHOOT |
+            F = PASS |
+            1 / 2 / 3 = SWITCH PLAYER
+        </div>
+
+        <div id="gameMessage"></div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
